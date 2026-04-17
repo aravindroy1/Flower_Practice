@@ -4,7 +4,7 @@ metadata:
   name: flower-svc
   namespace: flower-ns
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: flower-app
 

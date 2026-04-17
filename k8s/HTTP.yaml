@@ -9,7 +9,13 @@ spec:
   - matches:
     - path:
         type: PathPrefix
-        value: /
+        value: /flower
+    filters:
+    - type: URLRewrite
+      urlRewrite:
+         path:
+           type: ReplacePrefixMatch
+           replacePrefixMatch: /
     backendRefs:
     - name: flower-svc
       port: 80

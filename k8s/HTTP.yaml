@@ -11,5 +11,5 @@ spec:
         type: PathPrefix
         value: /
     backendRefs:
-    - name: frontend-service
+    - name: flower-svc
       port: 80

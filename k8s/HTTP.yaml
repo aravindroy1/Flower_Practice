@@ -6,6 +6,7 @@ metadata:
 spec:
   parentRefs:
   - name: main-gateway
+    namespace: default
   rules:
   - matches:
     - path:
@@ -13,4 +14,5 @@ spec:
         value: /
     backendRefs:
     - name: flower-svc
+      namespace: flower-ns 
       port: 80

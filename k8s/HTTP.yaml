@@ -16,3 +16,10 @@ spec:
     - name: flower-svc
       namespace: flower-ns 
       port: 80
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /auth
+    backendRefs:
+    - name: flower-mongo-svc
+      port: 80
